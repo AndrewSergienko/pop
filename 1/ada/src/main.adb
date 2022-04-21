@@ -13,15 +13,17 @@ procedure Main is
 
    task body sum_thread is
       sum: Integer := 0;
+      count: Integer := 0;
       end_index: randRange;
    begin
       reset(gen);
       end_index := random(gen);
       for i in 1..end_index
       loop
-        sum := sum + Integer(i);
+         sum := sum + Integer(i);
+         count := count + 1;
       end loop;
-      put_line("task id: " & Integer'Image(id) & ";  Result sum: " & Integer'Image(sum));
+      put_line("task id: " & Integer'Image(id) & ";  Result sum: " & Integer'Image(sum) & "; Addition count: " & Integer'Image(count));
    end sum_thread;
 
    task body main_thread is
