@@ -44,7 +44,7 @@ procedure Main is
             for i in 1..amountElems loop
                storage_not_empty.Seize;
                storage_access.Seize;
-               storage.Append("Product");
+               storage.Delete_First;
                Put_Line(name & " взяв товар.");
                storage_not_full.Release;
                storage_access.Release;
