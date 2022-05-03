@@ -16,41 +16,45 @@ procedure Main is
       storage_not_empty : Counting_Semaphore(0, Default_Ceiling);
       
       task type producer is
-         entry start(name: String);
+         entry start(name1: String);
       end producer;
       
       task type consumer is
-         entry start(name: String);
+         entry start(name1: String);
       end consumer;
       
       task body producer is
+         name: String := "";
          begin
-         accept start(name: String) do
-            for i in 1..amountElems loop
-               storage_not_full.Seize;
-               storage_access.Seize;
-               storage.Append("Product");
-               Put_Line(name & " добавив товар.");
-               storage_not_empty.Release;
-               storage_access.Release;
-               delay 1.0;
-            end loop;
+         accept start(name1: String) do
+            name := name1;
          end start;
+         for i in 1..amountElems loop
+            storage_not_full.Seize;
+            storage_access.Seize;
+            storage.Append("Product");
+            Put_Line(name & " добавив товар.");
+            storage_not_empty.Release;
+            storage_access.Release;
+            delay 1.0;
+         end loop;
       end producer;
       
       task body consumer is
+         name: String := "";
          begin
-         accept start(name: String) do
-            for i in 1..amountElems loop
-               storage_not_empty.Seize;
-               storage_access.Seize;
-               storage.Delete_First;
-               Put_Line(name & " взяв товар.");
-               storage_not_full.Release;
-               storage_access.Release;
-               delay 1.0;
-            end loop;
+         accept start(name1: String) do
+            name := name1;
          end start;
+         for i in 1..amountElems loop
+            storage_not_empty.Seize;
+            storage_access.Seize;
+            storage.Delete_First;
+            Put_Line(name & " взяв товар.");
+            storage_not_full.Release;
+            storage_access.Release;
+            delay 1.0;
+         end loop;
       end consumer;
       
       producers: array(1..5) of producer;
@@ -58,8 +62,8 @@ procedure Main is
        
    begin
       for i in 1..5 loop
-         producers(i).start(name => "Producer" & Integer'Image(i));
-         consumers(i).start(name => "Consumer" & Integer'Image(i));
+         producers(i).start(name1 => "Producer" & Integer'Image(i));
+         consumers(i).start(name1 => "Consumer" & Integer'Image(i));
       end loop;
    end ProducerConsumer;
 begin
