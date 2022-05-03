@@ -45,7 +45,7 @@ procedure Main is
                storage_not_empty.Seize;
                storage_access.Seize;
                storage.Append("Product");
-               Put_Line(name & " добавив товар.");
+               Put_Line(name & " взяв товар.");
                storage_not_full.Release;
                storage_access.Release;
                delay 1.0;
