@@ -1,0 +1,15 @@
+G:\Work\3 course\POP\4\1\c#\token\token\bin\Debug\net6.0\token.exe
+G:\Work\3 course\POP\4\1\c#\token\token\bin\Debug\net6.0\token.deps.json
+G:\Work\3 course\POP\4\1\c#\token\token\bin\Debug\net6.0\token.runtimeconfig.json
+G:\Work\3 course\POP\4\1\c#\token\token\bin\Debug\net6.0\token.dll
+G:\Work\3 course\POP\4\1\c#\token\token\bin\Debug\net6.0\token.pdb
+G:\Work\3 course\POP\4\1\c#\token\token\obj\Debug\net6.0\token.csproj.AssemblyReference.cache
+G:\Work\3 course\POP\4\1\c#\token\token\obj\Debug\net6.0\token.GeneratedMSBuildEditorConfig.editorconfig
+G:\Work\3 course\POP\4\1\c#\token\token\obj\Debug\net6.0\token.AssemblyInfoInputs.cache
+G:\Work\3 course\POP\4\1\c#\token\token\obj\Debug\net6.0\token.AssemblyInfo.cs
+G:\Work\3 course\POP\4\1\c#\token\token\obj\Debug\net6.0\token.csproj.CoreCompileInputs.cache
+G:\Work\3 course\POP\4\1\c#\token\token\obj\Debug\net6.0\token.dll
+G:\Work\3 course\POP\4\1\c#\token\token\obj\Debug\net6.0\refint\token.dll
+G:\Work\3 course\POP\4\1\c#\token\token\obj\Debug\net6.0\token.pdb
+G:\Work\3 course\POP\4\1\c#\token\token\obj\Debug\net6.0\token.genruntimeconfig.cache
+G:\Work\3 course\POP\4\1\c#\token\token\obj\Debug\net6.0\ref\token.dll

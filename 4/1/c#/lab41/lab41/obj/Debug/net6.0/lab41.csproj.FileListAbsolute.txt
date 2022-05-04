@@ -1,0 +1,15 @@
+G:\Work\3 course\POP\4\1\c#\lab41\lab41\bin\Debug\net6.0\lab41.exe
+G:\Work\3 course\POP\4\1\c#\lab41\lab41\bin\Debug\net6.0\lab41.deps.json
+G:\Work\3 course\POP\4\1\c#\lab41\lab41\bin\Debug\net6.0\lab41.runtimeconfig.json
+G:\Work\3 course\POP\4\1\c#\lab41\lab41\bin\Debug\net6.0\lab41.dll
+G:\Work\3 course\POP\4\1\c#\lab41\lab41\bin\Debug\net6.0\lab41.pdb
+G:\Work\3 course\POP\4\1\c#\lab41\lab41\obj\Debug\net6.0\lab41.csproj.AssemblyReference.cache
+G:\Work\3 course\POP\4\1\c#\lab41\lab41\obj\Debug\net6.0\lab41.GeneratedMSBuildEditorConfig.editorconfig
+G:\Work\3 course\POP\4\1\c#\lab41\lab41\obj\Debug\net6.0\lab41.AssemblyInfoInputs.cache
+G:\Work\3 course\POP\4\1\c#\lab41\lab41\obj\Debug\net6.0\lab41.AssemblyInfo.cs
+G:\Work\3 course\POP\4\1\c#\lab41\lab41\obj\Debug\net6.0\lab41.csproj.CoreCompileInputs.cache
+G:\Work\3 course\POP\4\1\c#\lab41\lab41\obj\Debug\net6.0\lab41.dll
+G:\Work\3 course\POP\4\1\c#\lab41\lab41\obj\Debug\net6.0\refint\lab41.dll
+G:\Work\3 course\POP\4\1\c#\lab41\lab41\obj\Debug\net6.0\lab41.pdb
+G:\Work\3 course\POP\4\1\c#\lab41\lab41\obj\Debug\net6.0\lab41.genruntimeconfig.cache
+G:\Work\3 course\POP\4\1\c#\lab41\lab41\obj\Debug\net6.0\ref\lab41.dll
