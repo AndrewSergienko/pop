@@ -37,7 +37,7 @@ public class Main {
         }
         // Перевірка в межах одного потоку
         int checkMinValue = Integer.MAX_VALUE;
-        int checkMinIndex = Integer.MAX_VALUE;
+        int checkMinIndex = 0;
         for (int i = 0; i < nums.length; i++) {
             if(nums[i] < checkMinValue){
                 checkMinValue = nums[i];
