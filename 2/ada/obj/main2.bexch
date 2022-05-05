@@ -1,14 +1,14 @@
 [GENERATED OBJECT FILE]
-b__main.o
+b__main2.o
 [PROJECT FILES]
 G:\Work\3 course\POP\2\ada\lab2.gpr
-20220505194138 56b61f2179e97830d835d234f1124fd2
+20220501190606 8da785dea0c9ead4cdce9fc665eb8802
 [BOUND OBJECT FILES]
-G:\Work\3 course\POP\2\ada\obj\main.o
+G:\Work\3 course\POP\2\ada\obj\main2.o
 [GENERATED SOURCE FILES]
-b__main.ads
-b__main.adb
-b__main.ali
+b__main2.ads
+b__main2.adb
+b__main2.ali
 [RESULTING OPTIONS]
 -LG:\Work\3 course\POP\2\ada\obj\
 -LG:\Work\3 course\POP\2\ada\obj\

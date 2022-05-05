@@ -16,24 +16,24 @@ procedure Main is
       storage_not_empty : Counting_Semaphore(0, Default_Ceiling);
       
       task type producer is
-         entry start(name1: String);
+         entry start(id1: Integer);
       end producer;
       
       task type consumer is
-         entry start(name1: String);
+         entry start(id1: Integer);
       end consumer;
       
       task body producer is
-         name: String := "";
+         id: Integer := 0;
          begin
-         accept start(name1: String) do
-            name := name1;
+         accept start(id1: Integer) do
+            id := id1;
          end start;
          for i in 1..amountElems loop
             storage_not_full.Seize;
             storage_access.Seize;
             storage.Append("Product");
-            Put_Line(name & " добавив товар.");
+            Put_Line("Producer" & Integer'Image(id) & " добавив товар.");
             storage_not_empty.Release;
             storage_access.Release;
             delay 1.0;
@@ -41,16 +41,16 @@ procedure Main is
       end producer;
       
       task body consumer is
-         name: String := "";
+         id: Integer := 0;
          begin
-         accept start(name1: String) do
-            name := name1;
+         accept start(id1: Integer) do
+            id := id1;
          end start;
          for i in 1..amountElems loop
             storage_not_empty.Seize;
             storage_access.Seize;
             storage.Delete_First;
-            Put_Line(name & " взяв товар.");
+            Put_Line("Consumer" & Integer'Image(id) & " взяв товар.");
             storage_not_full.Release;
             storage_access.Release;
             delay 1.0;
@@ -62,8 +62,8 @@ procedure Main is
        
    begin
       for i in 1..5 loop
-         producers(i).start(name1 => "Producer" & Integer'Image(i));
-         consumers(i).start(name1 => "Consumer" & Integer'Image(i));
+         producers(i).start(id1 => i);
+         consumers(i).start(id1 => i);
       end loop;
    end ProducerConsumer;
 begin

@@ -12,7 +12,7 @@ public class Philosopher implements Runnable{
         this.dinner_numbers = dinner_numbers;
         this.token = token;
         this.forks = forks;
-        second_fork = id % (ph_nums-1) + 1;
+        second_fork = id == ph_nums-1 ? 0 : id + 1;
     }
 
     @Override

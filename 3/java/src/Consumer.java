@@ -15,7 +15,6 @@ public class Consumer implements Runnable{
             try {
                 st.notEmpty.acquire();
                 st.access.acquire();
-                Thread.sleep(1000);
                 st.products.remove(0);
                 System.out.println(this.name + " забрав товар. В сховищі " + st.products.size() + " продуктів.");
                 st.notFull.release();

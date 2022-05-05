@@ -1,0 +1,3 @@
+main2.adb:24:94: error: missing "return"
+main2.adb:73:48: error: missing "return"
+main2.adb:91:102: error: positional parameter association not allowed after named one

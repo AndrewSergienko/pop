@@ -1,2 +1,0 @@
-main.adb:46:17: warning: variable "arr_create" is not modified in loop body [enabled by default]
-main.adb:46:17: warning: possible infinite loop [enabled by default]

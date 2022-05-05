@@ -13,7 +13,7 @@
             Console.WriteLine("aaa");
             for(int i = 0; i < 5; i++)
             {
-                readyDinner[i] = new Semaphore(0, 1);
+                readyDinner[i] = new Semaphore(0, 100);
                 forks[i] = new Semaphore(1, 1);
             }
 

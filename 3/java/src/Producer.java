@@ -15,7 +15,6 @@ public class Producer implements Runnable {
             try {
                 st.notFull.acquire();
                 st.access.acquire();
-                Thread.sleep(1000);
                 st.products.add("Product");
                 System.out.println(name + " додав товар. В сховищі " + st.products.size() + " продуктів.");
                 st.notEmpty.release();
